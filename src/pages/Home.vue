@@ -52,9 +52,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.row {
-    
-}
 
 .img {
     width: 50%;
@@ -65,7 +62,7 @@ export default defineComponent({
 
 #Presentazione {
     background: url('/ex2.jpg');
-    background-repeat: no-repeat;
+    background-attachment: center;
     background-size: cover;
     height: auto;
     
@@ -74,9 +71,8 @@ export default defineComponent({
 .text-presentation {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
-    font-size: 2vw;
     color: black;
-  
+    font-size: 2vw;
 }
 
 
