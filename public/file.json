@@ -1,0 +1,95 @@
+[
+    {
+        "portata": "Antipasto",
+        "piatto": [
+            {
+                "nome": "Insalata di mare",
+                "prezzo": 8.00,
+                "descrizione": "Insalata di mare con pomodoro, olive, capperi e olio",
+                "stato": "disponibile"
+            },
+            {
+                "nome": "Carpaccio di manzo",
+                "prezzo": 9.00,
+                "descrizione": "Carpaccio di manzo con rucola, scaglie di grana e olio",
+                "stato": "disponibile"
+            },
+            {
+                "nome": "Prosciutto e melone",
+                "prezzo": 7.00,
+                "descrizione": "Prosciutto crudo con melone",
+                "stato": "disponibile"
+            }
+        ]
+    },
+    {
+        "portata": "Primo",
+        "piatto":[
+            {
+                "nome": "Pasta al pomodoro",
+                "prezzo": 7.00,
+                "descrizione": "Pasta al pomodoro con basilico e olio",
+                "stato": "disponibile"
+            },
+            {
+                "nome": "Pasta al pesto",
+                "prezzo": 8.00,
+                "descrizione": "Pasta al pesto con basilico, pinoli e olio",
+                "stato": "disponibile"
+            },
+            {
+                "nome": "Pasta al ragù",
+                "prezzo": 8.00,
+                "descrizione": "Pasta al ragù con carne macinata e pomodoro",
+                "stato": "disponibile"
+            }
+        
+        ]
+    },
+    {
+        "portata": "Secondo",
+        "piatto":[
+            {
+                "nome": "Bistecca alla fiorentina",
+                "prezzo": 30.00,
+                "descrizione": "Bistecca alla fiorentina con patate al forno e verdure grigliate",
+                "stato": "disponibile"
+            },
+            {
+                "nome": "Cotoletta alla milanese",
+                "prezzo": 25.00,
+                "descrizione": "Cotoletta alla milanese con patate fritte",
+                "stato": "disponibile"
+            },
+            {
+                "nome": "Pollo alla griglia",
+                "prezzo": 25.00,
+                "descrizione": "Pollo alla griglia con patate al forno e verdure grigliate",
+                "stato": "disponibile"
+            }
+        ]
+    },
+    {
+        "portata": "Dolce",
+        "piatto":[
+            {
+                "nome": "Tiramisù",
+                "prezzo": 6.00,
+                "descrizione": "Tiramisù con savoiardi, mascarpone e caffè",
+                "stato": "disponibile"
+            },
+            {
+                "nome": "Panna cotta",
+                "prezzo": 5.00,
+                "descrizione": "Panna cotta con caramello",
+                "stato": "disponibile"
+            },
+            {
+                "nome": "Gelato",
+                "prezzo": 100.00,
+                "descrizione": "Gelato alla vaniglia, cioccolato e fragola",
+                "stato": "disponibile"
+            }
+        ]
+    }
+]
