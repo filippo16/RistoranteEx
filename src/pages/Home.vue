@@ -1,10 +1,12 @@
 <template>
-    <div class="container-fluid">
-        <section class="row border-top border-bottom py-2" id="Presentazione">
-            <div class="col-5 text-start mx-3 text-presentation">
-                <h2 class="">Ristorante</h2>
+    <div class="container-fluid p-0">
+        <section class="row border-top border-bottom" id="Presentazione">
+            <img class="img_pres" src="/ex2.jpg" />
+            <div class="text-start mx-3 py-2 text-presentation">
+                <!-- <h2 class="">Ristorante</h2> -->
                 <p class="">Benvenuti a "Il Veliero", dove il sapore del mare si fonde armoniosamente con l'autenticità della cucina italiana. Situato lungo la pittoresca costa, il nostro ristorante incarna l'essenza della tradizione culinaria marinara, offrendo specialità deliziosamente fresche e piatti classici che soddisfano i palati più esigenti.</p>
             </div>
+            
         </section>
         <section class="row border-top border-bottom py-2" id="Sec2">
             <div class="col-4 text-start mx-3">
@@ -61,10 +63,8 @@ export default defineComponent({
 }
 
 #Presentazione {
-    background: url('/ex2.jpg');
-    background-attachment: center;
-    background-size: cover;
     height: auto;
+    
     
 }
 
@@ -72,9 +72,68 @@ export default defineComponent({
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     color: black;
-    font-size: 2vw;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 1;
+    margin-top: 10px;
+    font-size: 2.5vw;
 }
 
-
+.img_pres {
+    width: 100%
+}
 
 </style>
+
+
+<!-- 
+<section class="row border-top border-bottom py-2" id="Presentazione">
+            <div class="col-6 col-md-4 text-start mx-3 text-presentation">
+                <h2 class="">Ristorante</h2>
+                <p class="">Benvenuti a "Il Veliero", dove il sapore del mare si fonde armoniosamente con l'autenticità della cucina italiana. Situato lungo la pittoresca costa, il nostro ristorante incarna l'essenza della tradizione culinaria marinara, offrendo specialità deliziosamente fresche e piatti classici che soddisfano i palati più esigenti.</p>
+            </div>
+        </section>
+
+
+ #Presentazione {
+    background: url('/ex2.jpg');
+    background-attachment: center;
+    background-size: cover;
+    height: 50vh;
+    
+}
+
+.text-presentation {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    color: black;
+    font-size: 2.5vw;
+    height: fit-content;
+}   
+
+@media screen and (min-width: 540px) {
+    .text-presentation {
+        font-size: 2.0vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #Presentazione {
+        background-size: 768px 440px;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color: #0099E5;
+    }
+
+    .text-presentation {
+        font-size: 1.8vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .text-presentation {
+        font-size: 1.6vw;
+    }
+}
+-->
