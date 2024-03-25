@@ -21,13 +21,13 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="/ex2.jpg" class="d-block w-100" alt="...">
+                    <img src="/ex2.jpg" class="d-block w-100" alt="Slider immagini">
                     </div>
                     <div class="carousel-item">
-                    <img src="/ex2.jpg" class="d-block w-100" alt="...">
+                    <img src="/ex2.jpg" class="d-block w-100" alt="Slider immagini">
                     </div>
                     <div class="carousel-item">
-                    <img src="/ex2.jpg" class="d-block w-100" alt="...">
+                    <img src="/ex2.jpg" class="d-block w-100" alt="Slider immagini">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -51,7 +51,8 @@
                 <h1 class="">Posizione 4</h1>
                 <p class="">Ecco dove venire a trovarci!</p>
             </div>
-            <img src="/prova_2.webp" alt="Posizione" class="col-8 img p-0 text-end">
+            <img src="/prova_2.webp" alt="Posizione" class="col-8 img p-0 text-end" @click="openOverlay">
+            <ImgView img="/prova_2.webp" />
         </section>
         <section class="row border-top border-bottom py-2" id="menu">
             <div class="col-4 text-start mx-3">
@@ -73,9 +74,18 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import ImgView from '../components/map-view.vue';
     
 export default defineComponent({
-
+    components: {
+        ImgView,
+    },
+    methods: {
+        openOverlay() {
+            const overlay = document.getElementById('overlay');
+            overlay!.style.display = 'block';
+        },
+    }
 });
 </script>
 
