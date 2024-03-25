@@ -2,24 +2,50 @@
     <div class="container-fluid p-0">
         <section class="row border-top border-bottom" id="Presentazione">
             <img class="img_pres" src="/ex2.jpg" />
-            <div class="text-start mx-3 py-2 text-presentation">
+            <div class="text-start mx-3 py-2  text-presentation">
                 <!-- <h2 class="">Ristorante</h2> -->
                 <p class="">Benvenuti a "Il Veliero", dove il sapore del mare si fonde armoniosamente con l'autenticità della cucina italiana. Situato lungo la pittoresca costa, il nostro ristorante incarna l'essenza della tradizione culinaria marinara, offrendo specialità deliziosamente fresche e piatti classici che soddisfano i palati più esigenti.</p>
             </div>
             
         </section>
-        <section class="row border-top border-bottom py-2" id="Sec2">
-            <div class="col-4 text-start mx-3">
-                <h2 class="">Posizione 2</h2>
-                <p class="">Ecco dove venire a trovarci!</p>
+        <section class="row border-top border-bottom py-2" id="slideImg">
+            <div class="col-3 text-start mx-3">
+                <h2 class="">Immagini</h2>
+                <p class="text-break">https://getbootstrap.com/docs/5.3/components/carousel/</p>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide col-7 ms-auto mt-3 mt-md-0">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="/ex2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="/ex2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="/ex2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
-        <section class="row border-top border-bottom py-2" id="Sec3">
+        <!-- <section class="row border-top border-bottom py-2" id="Sec3">
             <div class="col-auto text-start mx-3">
                 <h1 class="">Posizione 3</h1>
                 <p class="">Ecco dove venire a trovarci!</p>
             </div>
-        </section>
+        </section> -->
         <section class="row border-top border-bottom py-2" id="Sec4">
             <div class="col-4 text-start mx-3">
                 <h1 class="">Posizione 4</h1>
@@ -49,7 +75,7 @@
 import { defineComponent } from 'vue';
     
 export default defineComponent({
-    
+
 });
 </script>
 
@@ -64,8 +90,6 @@ export default defineComponent({
 
 #Presentazione {
     height: auto;
-    
-    
 }
 
 .text-presentation {
@@ -82,6 +106,10 @@ export default defineComponent({
 
 .img_pres {
     width: 100%
+}
+
+#slideImg {
+    background-color: antiquewhite;
 }
 
 </style>

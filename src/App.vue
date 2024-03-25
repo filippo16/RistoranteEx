@@ -12,7 +12,9 @@
       toggleCollapse() {
         this.collapse?.toggle();
       },
-     
+      hideCollapse() {
+        this.collapse?.hide();
+      },
     },
     mounted() {
       this.collapse = new Collapse(this.$refs.collapsibleNavbar as HTMLElement, {
@@ -32,13 +34,13 @@
         <div class="collapse navbar-collapse" ref="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <RouterLink class="nav-link ps-2 px-md-4 mx-md-3" to="/">Home</RouterLink>
+              <RouterLink class="nav-link ps-2 px-md-4 mx-md-3" to="/" @click.native="hideCollapse">Home</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link ps-2  px-md-4 mx-md-3" to="/menu">Menu</RouterLink>
+              <RouterLink class="nav-link ps-2  px-md-4 mx-md-3" to="/menu" @click.native="hideCollapse">Menu</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link ps-2  px-md-4 mx-md-3" :to="{ path:'/', hash:'#Sec5' }">About</RouterLink>
+              <RouterLink class="nav-link ps-2  px-md-4 mx-md-3" :to="{ path:'/', hash:'#Sec5' }" @click.native="hideCollapse">About</RouterLink>
             </li>
           </ul>
         </div>
