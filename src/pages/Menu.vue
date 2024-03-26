@@ -14,7 +14,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                 </div>
                 <div class="toast-body">
-                    {{ piattoSelected?.nome }} aggiunto alla lista!
+                    <strong>{{ piattoSelected?.nome }}</strong> aggiunto alla lista!
                 </div>
             </div>
         </div>
@@ -64,10 +64,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.container-fluid {
-    height: 100vh;
-    background-color: linear-gradient(rgba(0, 255 255, 0.5), rgba(255, 255, 255, 0.5));
-}
 
 .imgA {
     width: 30px;

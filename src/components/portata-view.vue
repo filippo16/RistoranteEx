@@ -51,10 +51,11 @@ mounted() {
 
 <style scoped>
 .portata {
-border: 1px solid #000;
-margin-bottom: 2%;
-border-radius: 20px;
-cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #000;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .btn {

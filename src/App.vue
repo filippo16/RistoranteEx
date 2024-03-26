@@ -101,6 +101,8 @@
 
 .page {
   margin-top: 3%;
+  background-color: aliceblue;
+  overflow: hidden;
 }
 
 .footer {
