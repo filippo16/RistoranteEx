@@ -47,6 +47,9 @@
       </div>
     </nav>
     <RouterView class="page"/>
+    <footer class="text-center py-3">
+      <p>&copy; Ristorante Pizzeria Il Veliero - Via G. Maroni 3 - 38066 Riva del Garda (TN)</p>
+    </footer>
   </div>
 </template>
 <!-- // text-shadow: 1px 1px white; -->
@@ -98,5 +101,10 @@
 
 .page {
   margin-top: 3%;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
 }
 </style>

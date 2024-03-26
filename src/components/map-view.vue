@@ -4,7 +4,7 @@ import { defineComponent } from 'vue';
 export default defineComponent({
     props: {
         img: {
-            type: Object as () => string,
+            type: String,
             required: true,
         }
     },

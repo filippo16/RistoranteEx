@@ -1,7 +1,7 @@
 <template>
-    <div class="container-fluid p-0">
+    <div class="container-fluid">
         <section class="row border-top border-bottom" id="Presentazione">
-            <img class="img_pres" src="/ex2.jpg" />
+            <img class="img-fluid" src="/ex2.jpg" />
             <div class="text-start mx-3 py-2  text-presentation">
                 <!-- <h2 class="">Ristorante</h2> -->
                 <p class="">Benvenuti a "Il Veliero", dove il sapore del mare si fonde armoniosamente con l'autenticità della cucina italiana. Situato lungo la pittoresca costa, il nostro ristorante incarna l'essenza della tradizione culinaria marinara, offrendo specialità deliziosamente fresche e piatti classici che soddisfano i palati più esigenti.</p>
@@ -9,11 +9,11 @@
             
         </section>
         <section class="row border-top border-bottom py-2" id="slideImg">
-            <div class="col-3 text-start mx-3">
+            <div class="col-auto text-start mx-3">
                 <h2 class="">Immagini</h2>
                 <p class="text-break">https://getbootstrap.com/docs/5.3/components/carousel/</p>
             </div>
-            <div id="carouselExampleIndicators" class="carousel slide col-7 ms-auto mt-3 mt-md-0">
+            <div id="carouselExampleIndicators" class="carousel slide col-auto">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -91,6 +91,10 @@ export default defineComponent({
 
 <style scoped>
 
+.container-fluid {
+    background-color: antiquewhite;
+}
+
 .img {
     width: 50%;
     object-fit: cover;
@@ -111,15 +115,15 @@ export default defineComponent({
     position: absolute;
     top: 1;
     margin-top: 10px;
-    font-size: 2.5vw;
+    font-size: 2.0vw;
 }
 
 .img_pres {
-    width: 100%
+    /* width: 100%; */
 }
 
 #slideImg {
-    background-color: antiquewhite;
+    
 }
 
 </style>

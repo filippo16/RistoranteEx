@@ -22,10 +22,6 @@ export default defineComponent({
         }
     },
     methods: {
-        // handleClick() {
-        //     this.$emit('piatto-selezionato', this.piatto);
-        //     console.log('click!');
-        // }
     }
 });
 </script>
